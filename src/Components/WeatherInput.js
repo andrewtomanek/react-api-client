@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import classes from "./WeatherInput.module.css";
 const Api_Key = process.env.REACT_APP_OPEN_WEATHER_MAP_KEY;
-console.log(Api_Key);
 const WeatherInput = props => {
   const [cityName, setCityName] = useState("");
 

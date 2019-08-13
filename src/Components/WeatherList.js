@@ -11,11 +11,15 @@ const WeatherList = props => {
       >
         Vyhledat znova
       </button>
-      {props.weatherResults &&
-        props.toggleBox &&
+      {props.weatherResults.length !== 0 && props.toggleBox ? (
         props.weatherResults.map((item, index) => (
           <WeatherCard key={item.id} itemData={item} idx={index} />
-        ))}
+        ))
+      ) : (
+        <div className={classes.error__box}>
+          <p className={classes.error__text}>Výraz nenalezen</p>
+        </div>
+      )}
     </div>
   );
 };

@@ -12,11 +12,15 @@ const NewsList = props => {
         Vyhledat znova
       </button>
       <ul className={classes.news__list}>
-        {props.fetchedResults &&
-          props.toggleBox &&
+        {props.fetchedResults.length !== 0 && props.toggleBox ? (
           props.fetchedResults.map((item, index) => (
             <NewsCard key={item.publishedAt} article={item} idx={index} />
-          ))}
+          ))
+        ) : (
+          <div className={classes.error__box}>
+            <p className={classes.error__text}>Výraz nenalezen</p>
+          </div>
+        )}
       </ul>
     </div>
   );

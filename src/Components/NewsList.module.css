@@ -33,3 +33,22 @@
   transform: scaleY(1.1);
   background-color: var(--red);
 }
+
+.error__box {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.error__text {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--red);
+  padding: 2rem;
+  text-align: center;
+}
