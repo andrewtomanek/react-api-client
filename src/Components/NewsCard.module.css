@@ -1,0 +1,115 @@
+.news__item {
+  display: grid;
+  grid: 1fr / 1fr;
+  overflow: hidden;
+}
+
+.news__item:first-child {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.news__item:first-child .img__box .img__link .news__img {
+  width: 120%;
+  height: 100%;
+}
+
+.news__item:nth-child(7) {
+  grid-row-end: span 3;
+  grid-column-end: span 3;
+}
+
+.news__item:nth-child(7) .img__box .img__link .news__img {
+  width: 100%;
+  height: 100%;
+}
+
+.img__box {
+  grid-area: 1 / 1 / 1 / 1;
+  display: grid;
+  place-items: center;
+  place-content: space-around;
+}
+
+.img__link {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.news__img {
+  width: 100%;
+  height: 30vh;
+  filter: invert(0%);
+}
+
+.news__item:hover .img__box .img__link .news__img {
+  filter: grayscale(50) blur(5px);
+}
+
+.text__box {
+  grid: 1fr / 1fr;
+  grid-area: 1 / 1 / 1 / 1;
+  display: grid;
+  grid-auto-flow: row;
+  margin: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 9;
+  overflow: hidden;
+}
+
+.news__header {
+  grid-area: 1 / 1 / 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.4s ease-out;
+}
+
+.news__item:hover .text__box .news__header {
+  opacity: 0;
+}
+
+.news__title {
+  color: white;
+  background-color: hsla(358, 83%, 46%, 0.5);
+  width: 100%;
+  padding: 0.1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: "Tahoma";
+  text-align: center;
+}
+
+.link__text {
+  color: white;
+  text-decoration: none;
+}
+
+.news__author {
+  color: white;
+  font-family: georgia, arial;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.news__content {
+  grid-area: 1 / 1 / 1 / 1;
+  color: white;
+  text-align: left;
+  font-family: georgia, arial;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  opacity: 0;
+}
+
+.news__item:hover .text__box .news__content {
+  opacity: 1;
+}

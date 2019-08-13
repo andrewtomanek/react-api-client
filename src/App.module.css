@@ -1,0 +1,9 @@
+.app__wrap {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--blau);
+}

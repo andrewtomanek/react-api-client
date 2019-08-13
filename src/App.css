@@ -1,0 +1,20 @@
+:root {
+  --blue: hsla(195, 100%, 95%, 1);
+  --water: hsla(195, 56%, 48%, 1);
+  --blau: hsla(195, 70%, 60%, 1);
+  --red: hsla(13, 69%, 50%, 1);
+  --orange: hsla(31, 100%, 54%, 1);
+  --green: hsla(143, 85%, 50%, 1);
+  font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+body {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "Cardo", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Stoke", Helvetica, Arial, sans-serif;
+}

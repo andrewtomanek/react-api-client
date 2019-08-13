@@ -1,0 +1,161 @@
+.giphy__controls {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--water);
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.giphy__item {
+  padding: 0rem;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  place-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.giphy__item:first-child {
+  grid-row-end: span 3;
+  grid-column-end: span 3;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.giphy__item:first-child .giphy__content .giphy__cover .giphy__preview {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.giphy__item:first-child .giphy__content .giphy__cover .preview__img {
+  width: 90vw;
+  height: 100%;
+}
+
+.giphy__item:first-child .giphy__content .giphy__cover .giphy__original {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.giphy__item:first-child .giphy__content .giphy__cover .original__img {
+  width: 90vw;
+  height: 100%;
+}
+
+.giphy__content {
+  display: grid;
+  grid: 1fr / 1fr;
+  place-items: center;
+  align-items: center;
+  padding: 0rem;
+  margin: 0rem;
+  width: 100%;
+}
+
+.giphy__cover {
+  grid-area: 1 / 1 / 1 / 1;
+  display: grid;
+  grid: 1fr / 1fr;
+  overflow: hidden;
+  z-index: 7;
+}
+
+.giphy__item:hover .giphy__content .giphy__cover {
+  z-index: 1;
+}
+
+.giphy__preview {
+  grid-area: 1 / 1 / 1 / 1;
+  display: grid;
+  place-items: center;
+  place-content: space-around;
+  width: 100%;
+  height: 30vh;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.preview__img {
+  width: 100%;
+  height: 30vh;
+}
+
+.giphy__original {
+  grid-area: 1 / 1 / 1 / 1;
+  display: grid;
+  place-items: center;
+  place-content: space-around;
+  width: 100%;
+  height: 30vh;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.original__img {
+  width: 100%;
+  height: 30vh;
+}
+
+.giphy__text {
+  place-self: end center;
+  grid-area: 1 / 1 / 1 / 1;
+  margin: 0;
+  padding: 0rem;
+  display: grid;
+  place-items: center;
+  justify-content: space-around;
+  align-content: end;
+  width: 100%;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.giphy__item:hover .giphy__content .giphy__text {
+  z-index: 9;
+}
+
+.giphy__source {
+  color: white;
+  background-color: hsla(358, 83%, 46%, 0.3);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.giphy__author {
+  color: white;
+  background-color: hsla(138, 83%, 46%, 0.3);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.giphy__title {
+  color: white;
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.giphy__time {
+  font-size: 1rem;
+  color: white;
+  padding: 0.2rem;
+  text-align: center;
+  font-weight: 400;
+}

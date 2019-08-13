@@ -1,0 +1,7 @@
+.forecast__wrap {
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  grid-auto-flow: row;
+  width: 100%;
+  background-color: skyblue;
+}

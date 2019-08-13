@@ -1,0 +1,43 @@
+.main__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--orange);
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  z-index: 10;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.nav__item {
+  margin: 0;
+}
+
+.nav__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+  border-radius: 0.1rem;
+  transition: all 300ms;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  background: white;
+  color: var(--orange);
+}

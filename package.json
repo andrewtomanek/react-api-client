@@ -1,0 +1,40 @@
+{
+  "name": "empty-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production",
+    "start": "webpack-dev-server --hot --mode development"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "dotenv": "^8.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-transition-group": "^4.2.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "webpack-dev-server": "^3.7.2",
+    "css-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "file-loader": "^4.0.0",
+    "url-loader": "^2.0.1",
+    "prettier": "^1.18.2"
+  }
+}

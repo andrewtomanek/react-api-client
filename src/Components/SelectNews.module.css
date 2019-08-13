@@ -1,0 +1,27 @@
+.select__container {
+  display: grid;
+  grid-auto-flow: row;
+  margin: 0;
+  width: 100%;
+  background-color: var(--blau);
+}
+
+.source__box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 95vw;
+  list-style: none;
+}
+
+.source__item {
+  font-size: 1rem;
+  color: white;
+  background: var(--orange);
+  padding: 0.2rem;
+  margin: 0.2rem;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  text-decoration: none;
+}
