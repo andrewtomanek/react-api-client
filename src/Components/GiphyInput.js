@@ -34,7 +34,7 @@ const GiphyInput = props => {
   return (
     <div className={classes.search__container}>
       <form className={classes.input__box} onSubmit={handleSubmit}>
-        <label className={classes.input__label}>Název</label>
+        <label className={classes.input__label}>Najít Gifs</label>
         <input
           type="text"
           className={classes.search__input}
