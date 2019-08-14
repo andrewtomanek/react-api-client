@@ -5,3 +5,25 @@
   width: 100%;
   background-color: skyblue;
 }
+
+.anim-enter {
+  opacity: 0;
+}
+.anim-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0rem);
+  transition: all 1000ms ease-in-out;
+  transform: scale(0.97) translateY(-100vh);
+}
+.anim-exit {
+  transform: scale(1) translateY(0);
+}
+.anim-exit-active {
+  transition: all 1000ms ease-in-out;
+  transform: scale(0.97) translateY(-100vh);
+}
+
+.anim-exit-done {
+  transition: opacity 1000ms ease-in-out;
+  opacity: 0;
+}
