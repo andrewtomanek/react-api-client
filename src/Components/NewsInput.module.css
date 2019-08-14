@@ -1,6 +1,5 @@
 .search__container {
   margin: 0;
-  padding: 1rem;
   background-color: var(--blau);
   display: grid;
   grid-auto-flow: row;

@@ -11,7 +11,7 @@ const NewsList = props => {
       >
         Vyhledat znova
       </button>
-      <ul className={classes.news__list}>
+      <section className={classes.news__list}>
         {props.fetchedResults.length !== 0 && props.toggleBox ? (
           props.fetchedResults.map((item, index) => (
             <NewsCard key={item.publishedAt} article={item} idx={index} />
@@ -21,7 +21,7 @@ const NewsList = props => {
             <p className={classes.error__text}>Výraz nenalezen</p>
           </div>
         )}
-      </ul>
+      </section>
     </div>
   );
 };

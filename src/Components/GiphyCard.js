@@ -21,7 +21,7 @@ const GiphyCard = props => {
         </div>
         <div className={classes.giphy__text}>
           <h5 className={classes.giphy__title}>{props.itemData.title}</h5>
-          <a className={classes.giphy__source} href={props.url}>
+          <a className={classes.giphy__source} href={props.itemData.url}>
             go to Giphy
           </a>
           <a

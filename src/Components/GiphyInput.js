@@ -39,7 +39,7 @@ const GiphyInput = props => {
           type="text"
           className={classes.search__input}
           value={searchString}
-          placeholder="dog"
+          placeholder="dog..."
           onChange={e => setSearchString(e.target.value)}
         />
         <div className={classes.meme__controls}>

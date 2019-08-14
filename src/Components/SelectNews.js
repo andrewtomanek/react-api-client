@@ -30,18 +30,18 @@ const SelectNews = props => {
   };
   return (
     <div className={classes.select__container}>
-      <ul className={classes.source__box}>
+      <section className={classes.source__box}>
         {defaultSources &&
           defaultSources.map((item, index) => (
-            <li
+            <article
               className={classes.source__item}
               onClick={() => pickSource(item.id)}
               key={item.id}
             >
               {item.name}
-            </li>
+            </article>
           ))}
-      </ul>
+      </section>
     </div>
   );
 };

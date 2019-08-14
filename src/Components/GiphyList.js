@@ -11,13 +11,13 @@ const GiphyList = props => {
       >
         Vyhledat znova
       </button>
-      <ul className={classes.giphy__results}>
+      <section className={classes.giphy__results}>
         {props.fetchedResults &&
           props.toggleBox &&
           props.fetchedResults.map((item, index) => (
             <GiphyCard key={item.id} itemData={item} />
           ))}
-      </ul>
+      </section>
       <img src={`/images/giphy.png`} />
     </div>
   );

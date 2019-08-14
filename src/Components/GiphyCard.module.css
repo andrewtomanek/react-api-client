@@ -18,9 +18,11 @@
   place-items: center;
   justify-content: space-around;
   width: 100%;
+  background-color: var(--water);
 }
 
 .giphy__item:first-child {
+  grid-area: 1/1/1/1;
   grid-row-end: span 3;
   grid-column-end: span 3;
   width: 100%;
@@ -47,7 +49,7 @@
 
 .giphy__item:first-child .giphy__content .giphy__cover .original__img {
   width: 90vw;
-  height: 100%;
+  height: auto;
 }
 
 .giphy__content {
@@ -84,8 +86,8 @@
 }
 
 .preview__img {
-  width: 100%;
   height: 30vh;
+  height: 30vw;
 }
 
 .giphy__original {
@@ -100,8 +102,8 @@
 }
 
 .original__img {
-  width: 100%;
   height: 30vh;
+  height: 30vw;
 }
 
 .giphy__text {
@@ -158,4 +160,13 @@
   padding: 0.2rem;
   text-align: center;
   font-weight: 400;
+}
+
+@media all and (max-width: 980px) {
+  .giphy__item:first-child {
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+    width: 100%;
+    height: 100%;
+  }
 }

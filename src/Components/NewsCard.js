@@ -3,7 +3,7 @@ import classes from "./NewsCard.module.css";
 
 const NewsCard = props => {
   return (
-    <li className={classes.news__item}>
+    <article className={classes.news__item}>
       <div className={classes.img__box}>
         <a className={classes.img__link} href={props.article.url}>
           <img className={classes.news__img} src={props.article.urlToImage} />
@@ -20,7 +20,7 @@ const NewsCard = props => {
         </div>
         <p className={classes.news__content}>{props.article.description}</p>
       </div>
-    </li>
+    </article>
   );
 };
 

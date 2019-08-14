@@ -3,6 +3,7 @@
   grid-auto-flow: row;
   margin: 0;
   width: 100%;
+  justify-content: center;
   background-color: var(--blau);
 }
 

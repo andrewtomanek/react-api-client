@@ -30,7 +30,7 @@ const ForecastInput = props => {
 
   const fetchData = async () => {
     const result = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${Api_Key}`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&lang=cz&appid=${Api_Key}`
     );
     const resultJson = await result.json();
     return resultJson.list;
