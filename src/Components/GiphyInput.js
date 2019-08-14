@@ -42,11 +42,9 @@ const GiphyInput = props => {
           placeholder="dog..."
           onChange={e => setSearchString(e.target.value)}
         />
-        <div className={classes.meme__controls}>
-          <button className={classes.submit__button} type="submit">
-            Vyhledat
-          </button>
-        </div>
+        <button className={classes.submit__button} type="submit">
+          Vyhledat
+        </button>
         <button className={classes.submit__button} onClick={() => getGiphs()}>
           Aktuálně populární
         </button>
